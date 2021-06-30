@@ -16,6 +16,16 @@
     <style>
         * {
             font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 2%;
+            max-height: 2198;
+            background-color: #E5E5E5;
         }
 
         .logo-img {
@@ -46,16 +56,16 @@
             line-height: 23px;
             letter-spacing: 0em;
             text-align: left;
+        }
 
-
-
+        .first-tamplate {
+            background-color: #ffffff;
         }
 
         .second-tamplate {
             background-color: #EBF0F3;
             border-top: 3px solid black;
         }
-
 
         .button {
             background: #3D8FE0;
@@ -74,31 +84,31 @@
             height: 50px !important;
             margin: 0 5px;
         }
-
-       
     </style>
 </head>
 
 <body>
-    <section class="">
-        <div class="card bg-dark text-white ">
-            <img src="images\hero-img.jpg" class="card-img d-none d-md-block" alt="...">
-            <img src="images\620px - 300.jpg" class="card-img d-block d-md-none" alt="...">
-            <div class="card-img-overlay  d-flex flex-column ">
-                <div class="logo-img">
-                    <img src="images\logo.png" class="logo" alt="...">
+    
+    <main class=" first-tamplate">
+        <section >
+            <div class="card bg-dark text-white  ">
+                <img src="images\hero-img.jpg" class="card-img d-none d-md-block" alt="...">
+                <img src="images\620px - 300.jpg" class="card-img d-block d-md-none" alt="...">
+                <div class="card-img-overlay  d-flex flex-column ">
+                    <div class="logo-img">
+                        <img src="images\logo.png" class="logo" alt="...">
+                    </div>
+                    <div class="  hero-info  h-75  d-flex align-items-center ">
+                        <h3 class="hero-text  ">WELCOME TO <br> STUNNING YOU!</h3>
+                    </div>
+    
                 </div>
-                <div class="  hero-info  h-75  d-flex align-items-center ">
-                    <h1 class="hero-text fs-1 ">WELCOME TO <br> STUNNING YOU!</h1>
-                </div>
-
             </div>
-        </div>
-    </section>
-    <main>
+        </section>
         <section class="container ">
             <h1 class="my-5">Hi Jane Cooper,</h1>
-            <h2 style="font-size:22px" class="fw-bold mb-4">Willkommen bei <span class="primary-clr"> Stunning You</span> Berlin!
+            <h2 style="font-size:22px" class="fw-bold mb-4">Willkommen bei <span class="primary-clr"> Stunning
+                    You</span> Berlin!
             </h2>
             <div class='welcome-container'>
                 <p>Wir gehen davon aus, dass Sie unsere vorherige E-Mail zur <br>
@@ -135,8 +145,8 @@
             <span class="primary-clr">folgendem link:</span>
         </section>
         <section class="container">
-            <div class="d-grid gap-2 col-md-5 col-sm-12 pb-5 ">
-                <button class="btn button text-light fw-bold py-3" type="button">BOOK AN APPLINTMENT</button>
+            <div class="d-grid gap-2 col-md-6 col-sm-12 pb-5 ">
+                <button class="btn button text-light fw-bold py-3" type="button"><a class="text-uppercase text-white text-decoration-none" href="#"> BOOK AN APPLINTMENT</a></button>
 
             </div>
         </section>
@@ -195,8 +205,8 @@
             <span class="primary-clr">following link: </span>
         </section>
         <section class="container">
-            <div class="d-grid gap-2 col-md-5 col-sm-12 pb-5 ">
-                <button class="btn button text-light fw-bold py-3" type="button">BOOK AN APPLINTMENT</button>
+            <div class="d-grid gap-2 col-md-6 col-sm-12 pb-5 ">
+                <button class="btn button  fw-bold py-3" type="button"><a class="text-white text-decoration-none text-uppercase" href="#">book an appointment</a></button>
 
             </div>
         </section>
@@ -210,25 +220,25 @@
         </section>
     </main>
     <footer class=" footer-container d-flex align-items-center justify-content-center border border-primary  row ">
- 
 
 
-            <div class=" col-sm-12 col-md-6">
-                <div class="container">
-                    <p class="text-white">Stunning You website: <span class="primary-clr">new.stunning-you.com </span></p>
+
+        <div class=" col-sm-12 col-md-6">
+            <div class="container">
+                <p class="text-white">Stunning You website: <span class="primary-clr">new.stunning-you.com </span></p>
                 <p class="text-white">Plastische Chirurgie in Berlin <br>
                     Gertraudenstraße 18, 10178 Berlin</p>
                 <p class="text-muted">Unsubscribe from mailing list</p>
-                </div>
             </div>
-            <div class="col-md-6  col-sm-12 ">
-                <div class="social-icons container d-flex  justify-content-md-end justify-content-sm-center ">
-                    <a href=""><img src="images\youtube.png" alt=""></a>
-                    <a href=""> <img src="images\twitter.png" alt=""></a>
-                    <a href=""> <img src="images\facebook-f.png" alt=""></a>
-                </div>
+        </div>
+        <div class="col-md-6  col-sm-12 ">
+            <div class="social-icons container d-flex  justify-content-md-end justify-content-sm-center ">
+                <a href=""><img src="images\youtube.png" alt=""></a>
+                <a href=""> <img src="images\twitter.png" alt=""></a>
+                <a href=""> <img src="images\facebook-f.png" alt=""></a>
             </div>
-    
+        </div>
+
 
     </footer>
 </body>
