@@ -47,6 +47,8 @@
         h1,
         h2,
         p,
+        h4,
+        h5,
         h6 {
             color: #130D40;
         }
@@ -54,6 +56,10 @@
         .hero-cotainer>img {
             height: 250px !important;
 
+        }
+
+        .welcome-container-mobile {
+            display: none
         }
 
         .hero-text {
@@ -74,6 +80,10 @@
 
             }
 
+            .welcome-title {
+                font-size: 19px !important;
+            }
+
             .logo-img img {
                 /* Rectangle 2 */
 
@@ -84,9 +94,26 @@
                 top: 8px;
 
             }
-            .number-text{
-                font-size: 14px!important;
-            line-height: 20px;   
+
+            .unsubscribe {
+                display: none
+            }
+
+            .link-text {
+                font-size: 18px !important;
+            }
+
+            .welcome-container-pc {
+                display: none
+            }
+
+            .welcome-container-mobile {
+                display: block
+            }
+
+            .number-text {
+                font-size: 14px !important;
+                line-height: 20px;
             }
 
             .hero-text {
@@ -109,8 +136,23 @@
             }
         }
 
+        .welcome-title {
+            /* Willkommen bei Stunning You Berlin! */
+
+
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+
+            color: #130D40;
+
+
+        }
+
         .welcome-container {
-            font-family: Roboto;
+
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -118,7 +160,8 @@
             letter-spacing: 0em;
             text-align: left;
         }
-        .number-text{
+
+        .number-text {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -131,9 +174,6 @@
         .email-text {
             /* Senden Sie uns eine E-MaL: */
 
-
-
-
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -141,7 +181,6 @@
             text-transform: uppercase;
 
             color: #130D40;
-
 
         }
 
@@ -174,19 +213,17 @@
             height: 30px !important;
             margin: 0 5px;
         }
+
         .social-icons {
             margin-left: 10px;
         }
-        .footer-container p{
-            
 
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 18px;
-
-
-color: #FFFFFF;
+        .footer-container p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
 
 
         }
@@ -214,10 +251,10 @@ color: #FFFFFF;
         </section>
         <section class="container ">
             <h2 class="my-3 fw-bolder">Hi Jane Cooper,</h2>
-            <h5 class="fw-bold mb-4 ">Willkommen bei<span class="primary-clr"> Stunning
+            <h5 class=" mb-4 welcome-title ">Willkommen bei<span class="primary-clr"> Stunning
                     You</span> Berlin!
             </h5>
-            <div class='welcome-container'>
+            <div class='welcome-container-pc'>
                 <p>Wir gehen davon aus, dass Sie unsere vorherige E-Mail zur <br>
                     <strong>Gesäßvergrößerung mit Hyaluronsäure gelesen haben.</strong>
                 </p>
@@ -226,32 +263,45 @@ color: #FFFFFF;
                 <p> Wenn Sie mehr wissen möchten, geben wir Ihnen gerne weitere Informationen.</p>
 
             </div>
+            <div class='welcome-container-mobile'>
+                <p>Wir haben Ihr Interesse an unserer neuen Behandlungsmethode registriert, <br>
+                    <small class='fw-bold '>der Povergrößerung mit Hyaluronsäure.</small>
+                </p>
+                <p> Es ist ein hochwertiger Filler, welcher lang anhaltende Ergebnisse liefert (1-2 Jahre). Wenn Sie
+                    mehr wissen möchten, geben wir Ihnen gerne weitere Informationen.
+
+
+
+            </div>
         </section>
         <section class="container">
             <h4 class="fw-bold">
                 Kontaktieren sie uns:
             </h4>
-            <div class=" d-flex   align-items-center">
+            <div class=" d-flex pt-3  ">
                 <div class="email-info ">
                     <img src="images\mail icon.png" alt="">
 
                 </div>
-                <p class=" pt-3 mx-2 fw-5  email-text  text-uppercase">Senden Sie uns eine E-MaL: <span
-                        class="primary-clr pt-3 text-lowercase  fw-bold">info@stunningyou.com</span></p>
-         
+                <div>
+                    <p class="  mx-2 fw-5  email-text  text-uppercase">Senden Sie uns eine E-MaL: <span
+                            class="primary-clr pt-3 text-lowercase  fw-bold">info@stunningyou.com</span></p>
+                </div>
             </div>
-            <div class=" d-flex   align-items-center">
+            <div class=" d-flex pt-3   ">
                 <div class="email-info ">
                     <img src="images\phone icon.png" alt="">
 
                 </div>
-                <p class=" pt-3 mx-2  number-text  text-uppercase">rufen Sie uns an: <span
-                    class="primary-clr pt-3 text-lowercase  fw-bold">0172-75-45-411</span></p>
+                <p class="  mx-2  number-text  text-uppercase">rufen Sie uns an: <span
+                        class="primary-clr pt-3 text-lowercase  fw-bold">0172-75-45-411</span></p>
             </div>
         </section>
-        <section class="container my-5"><h6>Oder buchen Sie einen Termin zu einem für Sie passenden <br> Datum und Uhrzeit
-            unter
-            <span class="primary-clr">folgendem link:</span></h6>
+        <section class="container my-5">
+            <p class="link-text">Oder buchen Sie einen Termin zu einem für Sie passenden <br> Datum und Uhrzeit
+                unter
+                <span class="primary-clr">folgendem link:</span>
+            </p>
         </section>
         <section>
             <div class="d-grid gap-2 col-md-7 col-sm-12 pb-5 ">
@@ -271,17 +321,30 @@ color: #FFFFFF;
     <main class="second-tamplate">
         <section class="container ">
             <h2 class="my-3 fw-bolder">Hi Jane Cooper,</h2>
-            <h5 class=" mb-4 fw-bolder ">Welcome to 
-                <span class="primary-clr"> Stunning You</span>!
+             
+
+            <h5 class=" mb-4 welcome-title ">Welcome to<span class="primary-clr"> Stunning You</span>!
             </h5>
-            <div class='welcome-container'>
-                <p>I trust that you’ve had a chance to read our previous email regarding<br>
-                    <strong> Buttocks Augmentation with Hyaluronic Acid Filler,</strong>
+            <div class='welcome-container-pc'>
+                <p>I trust that you’ve had a chance to read our previous email regarding 
+                    <strong> Buttocks Augmentation with Hyaluronic Acid Filler,</strong><br>
+                    so we thought it was a good time to check in with you again. 
                 </p>
-                <p>  so we thought it was a good time to check in with you again. <br> Have you had a chance to think about booking an appointment? 
+                <p> 
+                     Have you had a chance to think about booking an appointment? 
+                </p>
+                <p>If you would like to know more we would be more than happy to provide further informati</p>
+
+            </div>
+            <div class='welcome-container-mobile'>
+                <p>We noticed your interest in our new treatment method:  <br>
+                    <small class='fw-bold '>
+                        Buttocks Augmentation with Hyaluronic Acid Filler. </small>
                 </p>
                 <p>
-                    If you would like to know more we would be more than happy to provide further informati</p>
+
+                    It is the safest body filler and providesong lasting results (1-2 years). If you would like to know more we would be more that happy to provide further information.
+                </p>
 
             </div>
         </section>
@@ -290,40 +353,43 @@ color: #FFFFFF;
                 Feel free to:
 
             </h4>
-            <div class=" d-flex   align-items-center">
+            <div class=" d-flex pt-3  ">
                 <div class="email-info ">
                     <img src="images\mail icon.png" alt="">
 
                 </div>
-                <p class=" pt-3 mx-2 fw-5  email-text  text-uppercase">E-mail us: <span
-                        class="primary-clr pt-3 text-lowercase  fw-bold">info@stunningyou.com</span></p>
-         
+                <div>
+                    <p class="  mx-2 fw-5  email-text  text-uppercase">E-mail us: <span
+                            class="primary-clr pt-3 text-lowercase  fw-bold">info@stunningyou.com</span></p>
+                </div>
             </div>
-            <div class=" d-flex   align-items-center">
+            <div class=" d-flex pt-3   ">
                 <div class="email-info ">
                     <img src="images\phone icon.png" alt="">
 
                 </div>
-                <p class=" pt-3 mx-2  number-text  text-uppercase">Call us:  <span
-                    class="primary-clr pt-3 text-lowercase  fw-bold">0172 75 45 411</span></p>
+                <p class="  mx-2  number-text  text-uppercase">Call us:  <span
+                        class="primary-clr pt-3 text-lowercase  fw-bold">0172 75 45 411</span></p>
             </div>
         </section>
-        <section class="container my-5"><h6>For any questions or concerns
-            or book an appointment for a date and time suitable for you from the 
-            <span class="primary-clr"> following link: </span></h6>
+        <section class="container my-5">
+            <p class="link-text">For any questions or concerns
+                or book an appointment for a date and time suitable for you from the 
+                <span class="primary-clr">following link: </span>
+            </p>
         </section>
         <section>
             <div class="d-grid gap-2 col-md-7 col-sm-12 pb-5 ">
                 <button class="btn button mx-4  text-light fw-bold py-3" type="button"><a
-                        class="text-uppercase text-white text-decoration-none" href="#"> book an appointment</a></button>
+                        class="text-uppercase text-white text-decoration-none" href="#">book an appointment</a></button>
 
             </div>
         </section>
         <section class="container first-part pb-2">
             <p>We send our best!</p>
-          
+            
 
-            <p>  Warm Regards, <br>
+            <p>Warm Regards, <br>
                 The Stunning You Team</p>
 
         </section>
@@ -336,9 +402,9 @@ color: #FFFFFF;
             <div class="container p-0 m-0">
                 <p class="text-white ">Stunning You website:<span class="primary-clr"> new.stunning-you.com
                     </span></p>
-                 <p class="text-white">Plastische Chirurgie in Berlin <br>
-                    Gertraudenstraße 18, 10178 Berlin</p> 
-                <p class="text-muted ">Unsubscribe from mailing list</p>
+                <p class="text-white">Plastische Chirurgie in Berlin <br>
+                    Gertraudenstraße 18, 10178 Berlin</p>
+                <p class="text-muted  unsubscribe">Unsubscribe from mailing list</p>
             </div>
         </div>
         <div class="col-md-4  col-sm-12 ">
